@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Spindly Legs';
+    src: url('./font/Spindly Legs.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    background: #DFF8FE;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans MT', monospace;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Backgorund Images */
+.div-god {
+    background-image: url("../img/Cabeçalho\ back.jpg");
+}
+
+.demi-god {
+    height: calc(100vh - 169px);
+    background-image: url("../img/Corpo\ back.jpg");
+}
+
+.wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acesso-wrapper {
+    font-family: 'Spindly Legs';
+    display: flex;
+    justify-content: flex-end;
+
+    /* width: 20%; */
+    border-radius: 10px;
+    /* background-color: #CDA2FF; */
+}
+
+.container {
+    max-width: 1120px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    width: 165px;
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+    background-color: #CDA2FF;
+    border-radius: 10px;
+
+    transition: all 0.3s ease-in;
+}
+
+.button:hover {
+    background: #C9FFBF;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-list {
+    display: flex;
+    gap: 15px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 237px;
+}
+
+.linha {
+    width: 100%;
+    height: 3px;
+    background-color: #fd7459;
+}
+
+.folha {
+    max-width: 30px;
+}
+
+.folha-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#slider {
+    padding-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 75vw;
+    max-height: 550px;
+
+    position: relative;
+}
+
+#slider img {
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: oapcity 800ms;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+/* CSS rodapé */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1120px;
+}
+
+.rodape {
+    padding: 30px;
+    background-color: #CDA2FF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    width: 100%;
+}
+
+.contato {
+    font-size: large;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.separador {
+    width: 3px;
+    height: 55px;
+    background-color: #000000;
+}
+
+.rodape-esquerdo {
+    text-align: right;
+}
+
+.rodape-botton {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.spindly {
+    font-family: 'Spindly Legs';
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+
+.lmtd {
+    font-size: smaller;
+}
+
+.contato {
+    padding: 2px;
+    display: flex;
+}
+
+.DDD {
+    font-size: 19px;
+}
+
+svg {
+    width: 35px;
+    height: 35px;
+    
+    fill: white;
+}
